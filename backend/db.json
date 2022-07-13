@@ -1,0 +1,59 @@
+{
+  "produtos": {
+    "itens": [
+      {
+        "id": 1,
+        "nome": "HTML",
+        "preco": 2.9
+      },
+      {
+        "id": 2,
+        "nome": "CSS",
+        "preco": 2.9
+      },
+      {
+        "id": 3,
+        "nome": "Javascript",
+        "preco": 4.99
+      },
+      {
+        "id": 4,
+        "nome": "Vue",
+        "preco": 6.99
+      },
+      {
+        "id": 5,
+        "nome": "React",
+        "preco": 6.99
+      },
+      {
+        "id": 6,
+        "nome": "Angular",
+        "preco": 6.9
+      },
+      {
+        "id": 7,
+        "nome": "Java",
+        "preco": 8.9
+      },
+      {
+        "id": 8,
+        "nome": "Python",
+        "preco": 8.9
+      }
+    ]
+  },
+  "pedidos": [
+    {
+      "nome": "Lucas Albino",
+      "quantidade": "2",
+      "observacao": "Olá",
+      "adesivos": [
+        "HTML",
+        "Javascript"
+      ],
+      "preco": 15.78,
+      "id": 1
+    }
+  ]
+}

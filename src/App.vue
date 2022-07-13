@@ -1,30 +1,56 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
+  <Navbar :logo="logo_src" :alt="app_name"/>
   <router-view/>
+  <Footer/>
 </template>
 
+<script>
+
+  import Navbar from "./components/Navbar.vue"
+  import Footer from "./components/Footer.vue"
+
+  export default {
+    components: {
+      Navbar,
+      Footer
+    },
+    data() {
+      return {
+        logo_src: '/img/logo.png',
+        app_name: 'BemPaggo Store'
+      }
+    }
+  }
+
+</script>
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
 
-nav {
-  padding: 30px;
-}
+  * {
+    font-family: Helvetica;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
+  .main-container {
+    margin: 50px;
+    min-height: 250px;
+  }
 
-nav a.router-link-exact-active {
-  color: #42b983;
-}
+  body::-webkit-scrollbar {
+    width: 8px;               /* width of the entire scrollbar */
+  }
+
+  body::-webkit-scrollbar-track {
+    background: #c7c7ff;        /* color of the tracking area */
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background-color: #00162E;    /* color of the scroll thumb */
+    border: 3px solid #00162E;  /* creates padding around scroll thumb */
+  }
+
+
 </style>
+
